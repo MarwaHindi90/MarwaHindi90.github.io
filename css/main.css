@@ -4,7 +4,10 @@ Theme Coder : Marwa Hindi
 FirstColor  : #08526d
 SecondColor : #ec1c23
 */
+html , body {
+    font-family: 'Lato', sans-serif;
 
+}
 
 /* Start Upper Bar  */
 
@@ -50,7 +53,7 @@ SecondColor : #ec1c23
     color: #08526d;
     font-weight: 600;
 }
-.navbar-light .navbar-nav .active>.nav-link {
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
     color: #ec1c23
 }
 /* End Navbar */
@@ -234,7 +237,6 @@ SecondColor : #ec1c23
     color: #08526d;
     border: 2px solid #08526d;
     padding: 10px 5px;
-    margin-left: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     -webkit-transition: all .3s ease-in-out;
@@ -329,16 +331,19 @@ SecondColor : #ec1c23
     z-index: 3
 }
 .testimonials .carousel-caption {
-    transform: translate(0%, -30%)
+    transform: translate(0%, 0%)
 }
-.testimonials .carousel-caption img{
-    margin-bottom: 20px;
+
+/*
+@media (width: 992px) {
+   .testimonials .carousel-caption {
+    transform: translate(0%, 0%)
+   } 
 }
+*/
 
 .testimonials .carousel-caption h4 + span{
     font-size: 18px;
-    display: inline-block;
-    margin-bottom: 30px;
 }
 .testimonials .carousel-control-next, .carousel-control-prev {
     z-index: 5
